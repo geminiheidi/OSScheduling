@@ -11,7 +11,7 @@ public class ProcessGenerator {
         int arrivalRange = 99;
         int serviceRange = 10;
         int priorityRange = 5;
-        
+
         for(int i = 0; i < processNum; i++){
             Float arrivalTime = rand.nextFloat() * arrivalRange;  // nextFloat() [0,1)
             Float serviceTime = rand.nextFloat() * serviceRange;
@@ -24,8 +24,7 @@ public class ProcessGenerator {
 
         }
 
-
-
+        return pq;
 
     }
 

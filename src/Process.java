@@ -33,6 +33,13 @@ public class Process implements Comparable<Process>{
     }
 
 
+    public Process(char name, float arrivalTime, float serviceTime, int priority){
+        this.name = name;
+        this.arrivalTime = arrivalTime;
+        this.serviceTime = serviceTime;
+        this.priority = priority;
+    }
+
     @Override
     public int compareTo(Process other){
         return Float.compare(arrivalTime, other.arrivalTime);
