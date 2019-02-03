@@ -1,5 +1,5 @@
 public class Process implements Comparable<Process>{
-    private float arrivalTime
+    private float arrivalTime;
     private int startQuanta;
     private float serviceTime;
     private int finishQuanta;
